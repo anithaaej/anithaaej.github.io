@@ -70,6 +70,7 @@ section {
 
 .portfolio_summary_content {
     padding: 10px 16px;
+    text-align: justify;
 }
 
 .portfolio_summary {
@@ -97,17 +98,18 @@ section {
 }
 
 .portfolio_experience {
+    /* position: relative; */
     background-color: var(--outer_space);
     border-radius: 8px;
-    border-color: var(--robin_blue);
-    border-style: inset;
+    border: 1.5px var(--robin_blue) inset;
     color: var(--floral_white);
-    height: 280px;
-    overflow-y: scroll;
+    /* height: 280px; */
+    /* width: auto; */
+    /* overflow-x: scroll; */
 }
 
 .portfolio_experience_section_content{
-    overflow-x: scroll;
+    display: table
 }
 
 .position-title {
@@ -124,7 +126,11 @@ section {
     font: 500 16px/20px Nunito Sans;
 }
 
-
+.experience-roles-responsibilities {
+    font: 14px / 22px Nunito Sans;
+    text-align: justify;
+    margin-right: 10px;
+}
 
 .skills-list-details {
     display: flex;
@@ -143,6 +149,13 @@ a {
     align-items: center;
 }
 
+.certificate_name a {
+    font: 500 16px / 22px Nunito Sans;
+}
+
+.certificate_issuer {
+    font: 400 italic 14px/16px Nunito Sans;
+}
 
 /* SCROLLBAR - STYLES #STARTS# */
 ::-webkit-scrollbar {
@@ -177,6 +190,10 @@ hr {
     border-color: var(--cadet_grey);
 }
 /* SECTION DIVIDER - STYLE #ENDS# */
+
+/* CUSTOM ICONS - STYLES #STARTS# */
+
+/* CUSTOM ICONS - STYLES #ENDS# */
 
 @media screen and (min-width: 172px) and (max-width: 768px) {
     .portfolio_banner img{
