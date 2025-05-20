@@ -14,38 +14,49 @@
 <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
 <title>Anithaa E</title>
 </head>
-
+<nav class="profile-navigation py-3 w-md-50 w-auto">
+    <ul class="list-unstyled d-flex mb-0 text-center" id="navigations">
+        <li class="px-2 px-md-5"><a href="#portfolio_heading">Home</a></li>
+        <li class="px-2 px-md-5"><a href="#portfolio_experience_section">Experience</a></li>
+        <li class="px-2 px-md-5"><a href="#portfolio_skills_section">Skills</a></li>
+        <li class="px-2 px-md-5"><a href="#portfolio_tech-profile_section">Contact</a></li>
+    </ul>
+</nav>
 <body class="container-md">
     
-    <section class="portfolio_heading pt-5">
+    <section class="portfolio_heading pt-5" id="portfolio_heading">
         <!-- <div class="d-block"> -->
 
             <div class="portfolio_banner ">
                 <!-- <img src="./assets/images/pf_banner.png" alt="portfolio_banner"> -->
             </div>
-            <div class="portfolio text-center">
+            <div class="portfolio text-center pt-3">
                 <h1 class="portfolio_title ">Anithaa E</h1>
                 <h3 class="portfolio_subtitle">Software Engineer</h3>
-                <div class="portfolio_summary_content">
-                    <div class="section-subtitle">
-                        Profile Summary
-                    </div>
-                    <p class="portfolio_summary text-justify m-auto">
-                        Experienced Software Engineer with 4 years in web development, encompassing Frontend, API and Backend following the Software Development Lifecycle (SDLC) and Agile methodologies, consistently delivering effective solutions.<br>Over 1 year of experience as a Technical Support Engineer, resolved tickets via remote or call-based support.
-                    </p>
-                </div>
-                
             </div>
         <!-- </div> -->
     </section>
+    
+    
+    <section class="portfolio_heading pt-5" id="portfolio_heading">
+        <div class="portfolio_summary_content">
+            <div class="section-title">
+                Professional Summary
+            </div>
+            <p class="portfolio_summary m-auto">
+                Over <span class="text-robin-blue">5 years</span>  of experience in <strong>Full-Stack Development</strong>, proficient in developing websites and web applications using PHP, Golang, MySQL, and MongoDB. Frontend skills include JavaScript, Angular, HTML, CSS, and Bootstrap. Strong foundation in API integration and UI/UX design, ensuring seamless user experiences and optimized performance.<br>I expertise in analyzing solutions, reviewing designs and implementing user interfaces, back-end modules. I adapt to manage authentication and authorization with OAUTH2.0 for web application. <br>Proficient in collaborating with cross-functional teams to analyze requirements, develop solutions, and manage using software development lifecycle and agile methodologies, delivering high-quality solutions on time and within scope.<br>Dedicated to stay at the forefront of technology, with a focus on cloud deployments utilizing Kubernetes and AWS, and committed to adopting best practices to ensure scalability and efficiency in system design. <br>Certifications in Agile Software Development, Core PHP and Python underscore my commitment to continuous learning and professional growth.
+            </p>
+        </div>
+    
+    </section>
     <hr>
 
-    <section class="portfolio_experience_section row ">
+    <section class="portfolio_experience_section" id="portfolio_experience_section">
         <div class="section-title">
             Experience
         </div>
-        <div class="portfolio_experience_section_content d-md-flex d-block">
-            <div class="portfolio_experience card col-md-4 col-sm-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
+        <div class="d-md-flex d-block my-3 ">
+            <div class="portfolio_experience col-md-6 col-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
                 <div class="experience-company-details">
                     <div class="experience-info row">
                         <p class="position-title col-md-7">Software Engineer - Consultant</h4>
@@ -62,9 +73,9 @@
                 </div>
             </div>
     
-            <div class="portfolio_experience card col-md-4 col-sm-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
+            <div class="portfolio_experience col-md-6 col-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
                 <div class="experience-company-details">
-                    <div class="experience-info d-flex align-content-center">
+                    <div class="experience-info d-md-flex align-content-center">
                         <p class="position-title col-md-7">Software Developer</p>
                         <p class="experience-period col-md-5">Mar 2022 - Jan 2023</p>
                     </div>
@@ -77,12 +88,13 @@
                     </ul>
                 </div>
             </div>
-    
-            <div class="portfolio_experience card col-md-4 col-sm-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
+        </div>
+        <div class="d-md-flex d-block my-3">
+            <div class="portfolio_experience col-md-6 col-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
                 <div class="experience-company-details">
                     <div class="experience-info row">
-                        <p class="position-title col-md-7">Software Engineer</p>
-                        <p class="experience-period col-md-5">Nov 2019 - Mar 2022</p>
+                        <p class="position-title col-md-6">Software Engineer</p>
+                        <p class="experience-period col-md-6">Nov 2019 - Mar 2022</p>
                     </div>
                     <p class="position-in-company">Djax Technologies, Coimbatore</p>
                 </div>
@@ -95,7 +107,7 @@
                 </div>
             </div>
     
-            <div class="portfolio_experience card col-md-4 col-sm-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
+            <div class="portfolio_experience col-md-6 col-12 mr-md-2 my-md-2 mx-2 my-3 p-3">
                 <div class="experience-company-details">
                     <div class="experience-info row">
                         <p class="position-title col-md-7">Technical Support Engineer</p>
@@ -115,61 +127,118 @@
     </section>
     <hr>
 
-    <section class="portfolio_skills_section row ">
+    <section class="portfolio_skills_section row " id="portfolio_skills_section">
         <div class="section-title">
-            Skill Summary
+            Technical Skill
         </div>
         <div class="portfolio_skills_section_content d-md-flex d-block">
             <div class="portfolio_skills text-center m-auto">
                 <div class="skills-list-details m-md-2 mx-auto my-2">
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">Golang</p>
+                        <p class=" soft_skill mb-0 px-2">Golang</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">Angular</p>
+                        <p class=" soft_skill mb-0 px-2">Angular</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">PHP</p>
+                        <p class="  soft_skill mb-0 px-2">PHP</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">HTML</p>
+                        <p class="  soft_skill mb-0 px-2">Codeigniter</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">CSS, Bootstrap</p>
+                        <p class="  soft_skill mb-0 px-2">MySQL</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">Javascript</p>
+                        <p class="  soft_skill mb-0 px-2">MongoDB</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">Kubernetes</p>
+                        <p class="  soft_skill mb-0 px-2">HTML</p>
                     </div>
                     <div class="skills-info p-2 m-md-2 mb-3">
-                        <p class="soft_skill mb-0">Jira</p>
+                        <p class="  soft_skill mb-0 px-2">CSS</p>
+                    </div>
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class="  soft_skill mb-0 px-2">Bootstrap</p>
+                    </div>
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class="  soft_skill mb-0 px-2">Javascript</p>
+                    </div>
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class="  soft_skill mb-0 px-2">Kubernetes</p>
+                    </div>
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class="  soft_skill mb-0 px-2">Jira</p>
                     </div>
                 </div>
-                <div class="skill-position-details my-2">
+
+                <!-- <div class="skill-position-details my-2">
                     <ul class="list-unstyled skill-position-list">
                         <li class="my-1">Full-Stack Web Developer - PHP/Codeigniter</li>
                         <li class="my-1">Software Engineer - PHP/Golang</li>
                         <li class="my-1">Frontend Developer - Angular/Javascript </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
 
+        </div>
+
+        <!-- <div class="section-title">
+            Functional Skill
+        </div>
+        <div class="portfolio_skills_section_content d-md-flex d-block">
+            <div class="portfolio_skills text-center m-auto">
+                <div class="skills-list-details m-md-2 mx-auto my-2">
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class=" soft_skill mb-0 px-2">Teamwork</p>
+                    </div>
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class=" soft_skill mb-0 px-2"></p>
+                    </div>
+                    <div class="skills-info p-2 m-md-2 mb-3">
+                        <p class="  soft_skill mb-0 px-2">PHP</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+    </section>
+    <hr>
+
+    <section class="portfolio_certification_section row " id="portfolio_certifications_section">
+        <div class="section-title">
+            Certifications
+        </div>
+        <div class="portfolio_certification_section_content d-block">
+            <div class="certification-list-details text-center m-md-2 mx-auto my-2">
+                <div class="certification-info p-2 m-md-2 mb-3">
+                    <p class="certificate_name mb-0 px-2"><a href="https://coursera.org/verify/CZJT678MMNQM" target="_blank">Agile Software Development</a></p>
+                    <p class="certificate_issuer">Issued by: University of Minnesota</p>
+                </div>
+                <div class="certification-info p-2 m-md-2 mb-3">
+                    <p class="certificate_name mb-0 px-2"><a href="https://coursera.org/verify/W2U07MRE1VYR" target="_blank">Foundations of Project Management</a></p>
+                    <p class="certificate_issuer">Issued by: Google</p>
+                </div>
+                <div class="certification-info p-2 m-md-2 mb-3">
+                    <p class="certificate_name mb-0 px-2"><a href="https://coursera.org/verify/PSOIQDZXTWN2" target="_blank">Continuous Integration and Continuous Delivery (CI/CD)</a></p>
+                    <p class="certificate_issuer">Issued by: IBM</p>
+                </div>
+            </div>
         </div>
         
     </section>
     <hr>
 
-    <section class="portfolio_tech-profile_section">
+    <section class="portfolio_tech-profile_section" id="portfolio_tech-profile_section">
         <div class="section-title mb-3">
             Coding Profile
         </div>
         <div class="portfolio_tech-profile_content d-block text-center">
             <div class="portfolio_tech-profile_info">
                 <p class="tech-profile_list"><i class="bi bi-github"></i><span class="github mx-2"><a href="https://github.com/anithaaej" target="_blank">Github</a></span></p>
-                <!-- <p class="tech-profile_list"><i class="bi bi-stack-overflow"></i> <span class="linkedin"><a href="https://www.stackoverflow.com/anithaae/" target="_blank">Stack Overflow</a></span></p> -->
+                <p class="tech-profile_list"><i class="bi bi-stack-overflow"></i> <span class="linkedin"><a href="https://stackoverflow.com/users/11700678/guhiani" target="_blank">Stack Overflow</a></span></p>
+                <p class="tech-profile_list"><img src="./assets/images/leetcode.svg" alt="" width="14"> <span class="leetcode"><a href="https://leetcode.com/u/anithaa_ej/" target="_blank">LeetCode</a></span></p>
             </div>
         </div>
     </section>
@@ -181,7 +250,7 @@
 
     
 
-    <section class="portfolio_contact_section">
+    <section class="portfolio_contact_section" id="portfolio_contact_section">
         <div class="section-title mb-3">
             Contact
         </div>
